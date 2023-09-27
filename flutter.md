@@ -160,3 +160,70 @@ void main() {
    b) 2.5
    c) 2
    d) 3
+
+**Section 5: Program Outputs**
+
+17. What will be the output of the following Dart code?
+
+```dart
+void main() {
+  final List<int> numbers = [1, 2, 3, 4];
+  final result = numbers.fold(0, (acc, num) => acc + num);
+  print(result);
+}
+```
+
+   a) [1, 2, 3, 4]
+   b) 10
+   c) 0
+   d) 1234
+
+18. What will be the output of the following Dart code?
+
+```dart
+void main() async {
+  await Future.delayed(Duration(seconds: 2), () => print("Delayed"));
+  print("Immediate");
+}
+```
+
+   a) "Immediate" "Delayed"
+   b) "Delayed" "Immediate"
+   c) "Immediate"
+   d) "Delayed"
+
+19. What will be the output of the following Dart code?
+
+```dart
+void main() {
+  print(foo());
+}
+
+int foo() {
+  try {
+    return 42;
+  } finally {
+    return 84;
+  }
+}
+```
+
+   a) 42
+   b) 84
+   c) 126
+   d) The code will result in an error.
+
+20. What will be the output of the following Dart code?
+
+```dart
+void main() {
+  final x = [1, 2, 3];
+  final y = [1, 2, 3];
+  print(identical(x, y));
+}
+```
+
+   a) true
+   b) false
+   c) null
+   d) The code will result in an error.
