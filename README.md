@@ -180,3 +180,66 @@ console.log(x === y);
    b) true true
    c) false false
    d) false true
+
+**Section 5: Program Outputs**
+
+17. What will be the output of the following code?
+
+```javascript
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+const sayHello = greet;
+sayHello("Alice");
+```
+
+   a) "Hello, Alice!"
+   b) "Hello, undefined!"
+   c) ReferenceError
+   d) TypeError
+
+18. What will be the output of the following code?
+
+```javascript
+function add(x, y) {
+  return x + y;
+}
+
+const result = add(5);
+console.log(result);
+```
+
+   a) 5
+   b) NaN
+   c) undefined
+   d) ReferenceError
+
+19. What will be the output of the following code?
+
+```javascript
+const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce((acc, current) => acc + current, 0);
+console.log(sum);
+```
+
+   a) 10
+   b) [1, 2, 3, 4]
+   c) 0
+   d) 1234
+
+20. What will be the output of the following code?
+
+```javascript
+const foo = () => console.log("Hello from foo");
+const bar = () => console.log("Hello from bar");
+
+setTimeout(foo, 0);
+console.log("End of script");
+bar();
+```
+
+   a) "Hello from foo" "Hello from bar" "End of script"
+   b) "Hello from foo" "End of script" "Hello from bar"
+   c) "End of script" "Hello from foo" "Hello from bar"
+   d) "End of script" "Hello from foo"
